@@ -1,0 +1,2691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eric Kumi | Data Researcher</title>
+
+    <meta name="description"
+          content="Academic research portfolio of Eric Kumi, a Data Researcher interested in Machine Learning, Predictive Analytics and Intelligent Decision Systems.">
+
+    <meta name="keywords"
+          content="Eric Kumi, Data Researcher, Machine Learning, Intelligent Decision Systems, Predictive Analytics, Research Portfolio">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        :root {
+            --academic-dark: #172033;
+            --academic-navy: #1f2d45;
+            --academic-blue: #315d8c;
+            --academic-light: #f5f7fa;
+            --academic-border: #dfe5ec;
+            --academic-text: #263247;
+            --academic-muted: #667085;
+            --academic-white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--academic-text);
+            background: #ffffff;
+            line-height: 1.75;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: var(--academic-dark);
+        }
+
+        .serif {
+            font-family: "Source Serif 4", serif;
+        }
+
+        /* NAVIGATION */
+
+        .navbar {
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid var(--academic-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--academic-dark) !important;
+        }
+
+        .navbar-brand span {
+            color: var(--academic-blue);
+        }
+
+        .nav-link {
+            color: #4b5565 !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 1rem;
+        }
+
+        .nav-link:hover {
+            color: var(--academic-blue) !important;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 92vh;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8fafc 0%,
+                    #ffffff 55%,
+                    #eef3f8 100%
+                );
+            border-bottom: 1px solid var(--academic-border);
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--academic-blue);
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 5.8rem);
+            font-weight: 700;
+            letter-spacing: -0.055em;
+            line-height: 0.98;
+        }
+
+        .hero-title {
+            font-family: "Source Serif 4", serif;
+            font-size: clamp(1.7rem, 3vw, 2.7rem);
+            color: var(--academic-blue);
+            line-height: 1.25;
+        }
+
+        .hero-description {
+            max-width: 720px;
+            font-size: 1.08rem;
+            color: #566174;
+        }
+
+        .btn-academic {
+            background: var(--academic-dark);
+            color: white;
+            border-radius: 4px;
+            padding: 0.8rem 1.3rem;
+            font-weight: 600;
+            border: 1px solid var(--academic-dark);
+        }
+
+        .btn-academic:hover {
+            background: var(--academic-blue);
+            border-color: var(--academic-blue);
+            color: white;
+        }
+
+        .btn-outline-academic {
+            border: 1px solid var(--academic-border);
+            color: var(--academic-dark);
+            border-radius: 4px;
+            padding: 0.8rem 1.3rem;
+            font-weight: 600;
+            background: white;
+        }
+
+        .btn-outline-academic:hover {
+            border-color: var(--academic-blue);
+            color: var(--academic-blue);
+        }
+
+        .research-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0.8rem;
+            background: white;
+            border: 1px solid var(--academic-border);
+            border-radius: 3px;
+            font-size: 0.78rem;
+            color: #596579;
+            margin: 0.2rem;
+        }
+
+        .research-badge i {
+            color: var(--academic-blue);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--academic-blue);
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-bottom: 0.7rem;
+        }
+
+        .section-title {
+            font-family: "Source Serif 4", serif;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 1.3rem;
+        }
+
+        .section-intro {
+            max-width: 780px;
+            color: var(--academic-muted);
+            font-size: 1.03rem;
+        }
+
+        /* RESEARCH PROFILE */
+
+        .research-card {
+            height: 100%;
+            padding: 2rem;
+            border: 1px solid var(--academic-border);
+            background: white;
+            transition: all 0.25s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            border-color: #b9c6d6;
+            box-shadow: 0 15px 40px rgba(23,32,51,0.07);
+        }
+
+        .research-icon {
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--academic-border);
+            color: var(--academic-blue);
+            font-size: 1.25rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .research-card h3 {
+            font-size: 1.15rem;
+            font-weight: 650;
+        }
+
+        .research-card p {
+            color: var(--academic-muted);
+            font-size: 0.92rem;
+            margin-bottom: 0;
+        }
+
+        /* RESEARCH JOURNEY */
+
+        .journey {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .journey::before {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 10px;
+            bottom: 10px;
+            width: 1px;
+            background: #ccd5df;
+        }
+
+        .journey-item {
+            position: relative;
+            margin-bottom: 4rem;
+        }
+
+        .journey-dot {
+            position: absolute;
+            left: -30px;
+            top: 7px;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border: 3px solid var(--academic-blue);
+            border-radius: 50%;
+        }
+
+        .journey-year {
+            color: var(--academic-blue);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .journey-item h3 {
+            font-family: "Source Serif 4", serif;
+            font-size: 1.8rem;
+            margin-top: 0.3rem;
+        }
+
+        .journey-item p {
+            color: var(--academic-muted);
+            max-width: 750px;
+        }
+
+        /* FEATURED RESEARCH */
+
+        .featured {
+            background: var(--academic-light);
+        }
+
+        .research-header {
+            background: var(--academic-dark);
+            color: white;
+            padding: 3rem;
+        }
+
+        .research-header h2,
+        .research-header h3 {
+            color: white;
+        }
+
+        .research-header .section-label {
+            color: #a9c5df;
+        }
+
+        .research-meta {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+        }
+
+        .research-meta small {
+            display: block;
+            color: #9daabd;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.65rem;
+        }
+
+        .research-meta strong {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .research-content {
+            background: white;
+            padding: 3rem;
+            border: 1px solid var(--academic-border);
+            border-top: 0;
+        }
+
+        .research-content h3 {
+            font-family: "Source Serif 4", serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .research-content p {
+            color: #596579;
+        }
+
+        /* METHODOLOGY */
+
+        .method-step {
+            position: relative;
+            padding: 1.5rem;
+            height: 100%;
+            border: 1px solid var(--academic-border);
+            background: white;
+        }
+
+        .method-number {
+            font-family: "Source Serif 4", serif;
+            font-size: 2rem;
+            color: #a7b4c4;
+            line-height: 1;
+        }
+
+        .method-step h4 {
+            font-size: 1rem;
+            margin-top: 1rem;
+            font-weight: 650;
+        }
+
+        .method-step p {
+            color: var(--academic-muted);
+            font-size: 0.86rem;
+            margin-bottom: 0;
+        }
+
+        /* DATA PIPELINE */
+
+        .pipeline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+        }
+
+        .pipeline-item {
+            border: 1px solid var(--academic-border);
+            padding: 0.8rem 1rem;
+            background: white;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        .pipeline-arrow {
+            color: #9aa7b7;
+        }
+
+        /* RESULTS */
+
+        .result-box {
+            border-left: 3px solid var(--academic-blue);
+            padding: 1.2rem 1.4rem;
+            background: #f8fafc;
+            height: 100%;
+        }
+
+        .result-box h4 {
+            font-size: 1rem;
+            font-weight: 650;
+        }
+
+        .result-box p {
+            font-size: 0.87rem;
+            margin: 0;
+            color: var(--academic-muted);
+        }
+
+        /* UNDERGRADUATE */
+
+        .undergrad {
+            border: 1px solid var(--academic-border);
+            padding: 3rem;
+        }
+
+        .method-tag {
+            display: inline-block;
+            padding: 0.4rem 0.65rem;
+            margin: 0.15rem;
+            border: 1px solid var(--academic-border);
+            font-size: 0.75rem;
+            color: #586578;
+            background: white;
+        }
+
+        /* RESEARCH AGENDA */
+
+        .agenda-card {
+            height: 100%;
+            padding: 2rem;
+            border-top: 3px solid var(--academic-blue);
+            background: white;
+            border-left: 1px solid var(--academic-border);
+            border-right: 1px solid var(--academic-border);
+            border-bottom: 1px solid var(--academic-border);
+        }
+
+        .agenda-number {
+            font-family: "Source Serif 4", serif;
+            color: #9aa8b8;
+            font-size: 1.5rem;
+        }
+
+        .agenda-card h3 {
+            font-size: 1.15rem;
+            margin-top: 0.5rem;
+        }
+
+        .agenda-card p {
+            color: var(--academic-muted);
+            font-size: 0.9rem;
+        }
+
+        .phd-question {
+            background: var(--academic-dark);
+            color: white;
+            padding: 3rem;
+            margin-top: 3rem;
+        }
+
+        .phd-question .section-label {
+            color: #a9c5df;
+        }
+
+        .phd-question h3 {
+            color: white;
+            font-family: "Source Serif 4", serif;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            line-height: 1.4;
+        }
+
+        /* CAPABILITIES */
+
+        .capability-group {
+            border-top: 1px solid var(--academic-border);
+            padding: 1.5rem 0;
+        }
+
+        .capability-group h3 {
+            font-size: 1rem;
+            font-weight: 650;
+        }
+
+        .capability-group p {
+            color: var(--academic-muted);
+            font-size: 0.9rem;
+        }
+
+        .tech {
+            display: inline-block;
+            border: 1px solid var(--academic-border);
+            padding: 0.45rem 0.7rem;
+            margin: 0.2rem;
+            font-size: 0.75rem;
+            background: #fafbfc;
+        }
+
+        /* ACADEMIC BACKGROUND */
+
+        .education-card {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--academic-border);
+        }
+
+        .education-card:last-child {
+            border-bottom: none;
+        }
+
+        .education-card h3 {
+            font-family: "Source Serif 4", serif;
+            font-size: 1.55rem;
+        }
+
+        .education-meta {
+            color: var(--academic-blue);
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* DOCUMENTS */
+
+        .document-card {
+            height: 100%;
+            border: 1px solid var(--academic-border);
+            padding: 1.7rem;
+            background: white;
+        }
+
+        .document-icon {
+            font-size: 1.5rem;
+            color: var(--academic-blue);
+        }
+
+        .document-card h3 {
+            font-size: 1.05rem;
+            margin-top: 1rem;
+        }
+
+        .document-card p {
+            color: var(--academic-muted);
+            font-size: 0.85rem;
+        }
+
+        /* CONTACT */
+
+        .contact-section {
+            background: var(--academic-dark);
+            color: white;
+        }
+
+        .contact-section h2 {
+            color: white;
+            font-family: "Source Serif 4", serif;
+        }
+
+        .contact-section p {
+            color: #aeb8c7;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-link:hover {
+            color: #a9c5df;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #101827;
+            color: #7f8b9d;
+            padding: 1.5rem 0;
+            font-size: 0.75rem;
+        }
+
+        /* ANIMATION */
+
+        .fade-up {
+            animation: fadeUp 0.8s ease both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 991px) {
+
+            .hero {
+                min-height: auto;
+                padding: 130px 0 90px;
+            }
+
+            .nav-link {
+                margin-left: 0;
+            }
+
+            section {
+                padding: 75px 0;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+
+            .research-header,
+            .research-content,
+            .undergrad,
+            .phd-question {
+                padding: 2rem 1.4rem;
+            }
+
+            .pipeline {
+                flex-direction: column;
+            }
+
+            .pipeline-arrow {
+                transform: rotate(90deg);
+            }
+
+            .hero h1 {
+                font-size: 3.4rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            Eric <span>Kumi</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#research">Research</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#journey">Journey</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#agenda">Research Agenda</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#background">Background</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#documents">Documents</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-9">
+
+                <div class="eyebrow fade-up">
+                    Academic Research Portfolio
+                </div>
+
+                <h1 class="fade-up">
+                    Eric Kumi
+                </h1>
+
+                <div class="hero-title mt-3 fade-up">
+                    Data Researcher |
+                    Machine Learning & Intelligent Decision Systems
+                </div>
+
+                <p class="hero-description mt-4 fade-up">
+
+                    I am an emerging data researcher interested in how
+                    machine learning, predictive analytics, and intelligent
+                    decision systems can support better decision-making in
+                    complex operational environments.
+
+                </p>
+
+                <div class="mt-4 fade-up">
+
+                    <a href="#research"
+                       class="btn btn-academic me-2 mb-2">
+
+                        <i class="bi bi-journal-text me-2"></i>
+                        Explore My Research
+
+                    </a>
+
+                    <a href="#documents"
+                       class="btn btn-outline-academic mb-2">
+
+                        <i class="bi bi-file-earmark-person me-2"></i>
+                        Research Documents
+
+                    </a>
+
+                </div>
+
+                <div class="mt-4 fade-up">
+
+                    <span class="research-badge">
+                        <i class="bi bi-cpu"></i>
+                        Machine Learning
+                    </span>
+
+                    <span class="research-badge">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        Predictive Analytics
+                    </span>
+
+                    <span class="research-badge">
+                        <i class="bi bi-diagram-3"></i>
+                        Intelligent Decision Systems
+                    </span>
+
+                    <span class="research-badge">
+                        <i class="bi bi-eye"></i>
+                        Explainable Analytics
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH PROFILE
+========================= -->
+
+<section id="research">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-9">
+
+                <div class="section-label">
+                    01 / Research Profile
+                </div>
+
+                <h2 class="section-title">
+                    Understanding data.
+                    <br>
+                    Building insight.
+                    <br>
+                    Supporting better decisions.
+                </h2>
+
+                <p class="section-intro">
+
+                    My research interests are centred on understanding how
+                    data-driven methods can support decision-making in complex
+                    and dynamic environments.
+
+                    I am particularly interested in the intersection of
+                    machine learning, predictive analytics, forecasting,
+                    visual analytics, and intelligent decision systems.
+
+                </p>
+
+                <p class="section-intro mt-3">
+
+                    My academic research has progressed from predictive
+                    modelling and demand forecasting during my undergraduate
+                    studies to the integration of machine learning,
+                    analytics, visualisation, and decision-support artefact
+                    development during my master's research.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6">
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+
+                    <h3>
+                        Machine Learning & Predictive Analytics
+                    </h3>
+
+                    <p>
+                        Exploring how machine-learning methods can identify
+                        patterns, support prediction, and generate analytical
+                        insights for complex operational challenges.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+
+                    <h3>
+                        Forecasting & Data-Driven Planning
+                    </h3>
+
+                    <p>
+                        Investigating forecasting approaches that can support
+                        planning and decision-making under uncertainty.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+
+                    <h3>
+                        Intelligent Decision Systems
+                    </h3>
+
+                    <p>
+                        Examining how data, analytical models, and interactive
+                        systems can be integrated to support informed
+                        decision-making.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        <i class="bi bi-eye"></i>
+                    </div>
+
+                    <h3>
+                        Explainable & Human-Centred AI
+                    </h3>
+
+                    <p>
+                        Developing an interest in how predictive models can
+                        be interpreted and meaningfully incorporated into
+                        human decision-making processes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row mt-5">
+
+            <div class="col-lg-10">
+
+                <div class="p-4 border-start border-3"
+                     style="border-color:#315d8c !important;">
+
+                    <div class="section-label">
+                        Research Philosophy
+                    </div>
+
+                    <p class="serif fs-4 mb-0">
+
+                        I am interested in research that connects analytical
+                        methods with meaningful real-world problems. The value
+                        of data and machine learning is not only in producing
+                        predictions, but also in generating insights that can
+                        be understood and used within real decision-making
+                        contexts.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH JOURNEY
+========================= -->
+
+<section id="journey" class="bg-light">
+
+    <div class="container">
+
+        <div class="section-label">
+            02 / Research Journey
+        </div>
+
+        <h2 class="section-title">
+            From prediction to<br>
+            intelligent decision support.
+        </h2>
+
+        <p class="section-intro">
+
+            My research journey has progressively developed from predictive
+            modelling and forecasting toward the design of intelligent,
+            data-driven decision-support systems.
+
+        </p>
+
+
+        <div class="journey mt-5">
+
+            <!-- UNDERGRADUATE -->
+
+            <div class="journey-item">
+
+                <div class="journey-dot"></div>
+
+                <div class="journey-year">
+                    Undergraduate Research
+                </div>
+
+                <h3>
+                    Predicting Product Demand Using Machine Learning
+                </h3>
+
+                <p>
+                    My undergraduate research investigated forecasting and
+                    machine-learning approaches for product demand prediction,
+                    establishing my early interest in predictive analytics,
+                    uncertainty, and data-driven planning.
+                </p>
+
+            </div>
+
+
+            <!-- MASTER'S -->
+
+            <div class="journey-item">
+
+                <div class="journey-dot"></div>
+
+                <div class="journey-year">
+                    Master's Research
+                </div>
+
+                <h3>
+                    Real-Time Port Activity Monitoring & Decision Support
+                </h3>
+
+                <p>
+                    My master's research expanded this interest into the
+                    integration of data analytics, machine learning,
+                    interactive visualisation, and decision-support artefact
+                    development within a Ghanaian port operations context.
+                </p>
+
+            </div>
+
+
+            <!-- FUTURE -->
+
+            <div class="journey-item mb-0">
+
+                <div class="journey-dot"></div>
+
+                <div class="journey-year">
+                    Emerging Doctoral Direction
+                </div>
+
+                <h3>
+                    Explainable & Human-Centred Intelligent Systems
+                </h3>
+
+                <p>
+                    These experiences have shaped my interest in investigating
+                    how predictive analytics, explainable machine learning,
+                    and human judgement can be brought together within
+                    intelligent decision-support systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED MASTER'S RESEARCH
+========================= -->
+
+<section id="masters-research" class="featured">
+
+    <div class="container">
+
+        <div class="section-label">
+            03 / Featured Research
+        </div>
+
+        <div class="research-header">
+
+            <h2 class="serif display-6">
+
+                Development and Analysis of a
+                Real-Time Port Activity Monitoring
+                Dashboard in Ghana
+
+            </h2>
+
+            <p class="mt-3 mb-0 text-light opacity-75">
+
+                Master's Thesis
+
+            </p>
+
+
+            <div class="research-meta">
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <small>
+                            Research Method
+                        </small>
+
+                        <strong>
+                            Design Science Research
+                        </strong>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <small>
+                            Research Domain
+                        </small>
+
+                        <strong>
+                            Port Operations & Analytics
+                        </strong>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <small>
+                            Core Methods
+                        </small>
+
+                        <strong>
+                            ML Â· Visual Analytics Â· Decision Support
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="research-content">
+
+            <!-- PROBLEM -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Research Context
+                    </div>
+
+                    <h3>
+                        The Problem
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        Ports generate substantial volumes of operational and
+                        trade data, but transforming these data into timely
+                        and actionable intelligence can be challenging.
+
+                    </p>
+
+                    <p>
+
+                        The research investigated how data analytics,
+                        machine learning, and interactive visualisation could
+                        be integrated into a decision-support artefact for
+                        port activity monitoring in Ghana.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- AIM -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Research Aim
+                    </div>
+
+                    <h3>
+                        What did I investigate?
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p class="serif fs-4">
+
+                        To develop and analyse a real-time port activity
+                        monitoring dashboard that integrates data analytics,
+                        machine learning, and interactive visualisation to
+                        support operational monitoring and decision-making
+                        in Ghana.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATA -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Data
+                    </div>
+
+                    <h3>
+                        Ghana Customs Data
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        The study used Ghana Customs Bills of Entry data
+                        containing operational, financial, temporal,
+                        geographical, cargo, and risk-related attributes.
+
+                    </p>
+
+                    <div class="pipeline mt-4">
+
+                        <div class="pipeline-item">
+                            Customs Data
+                        </div>
+
+                        <div class="pipeline-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+
+                        <div class="pipeline-item">
+                            Data Preparation
+                        </div>
+
+                        <div class="pipeline-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+
+                        <div class="pipeline-item">
+                            Exploratory Analysis
+                        </div>
+
+                        <div class="pipeline-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+
+                        <div class="pipeline-item">
+                            Predictive Analytics
+                        </div>
+
+                        <div class="pipeline-arrow">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+
+                        <div class="pipeline-item">
+                            Decision Support
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- METHODOLOGY -->
+
+            <div class="row mb-5">
+
+                <div class="col-12">
+
+                    <div class="section-label">
+                        Methodology
+                    </div>
+
+                    <h3>
+                        Design Science Research Methodology
+                    </h3>
+
+                    <p class="mb-4">
+
+                        The research adopted a Design Science Research
+                        approach to guide the development and evaluation of
+                        the decision-support artefact.
+
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="method-step">
+
+                        <div class="method-number">01</div>
+
+                        <h4>
+                            Problem Identification
+                        </h4>
+
+                        <p>
+                            Identifying and motivating the operational
+                            decision-support problem.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="method-step">
+
+                        <div class="method-number">02</div>
+
+                        <h4>
+                            Solution Objectives
+                        </h4>
+
+                        <p>
+                            Defining objectives for the proposed analytical
+                            artefact.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="method-step">
+
+                        <div class="method-number">03</div>
+
+                        <h4>
+                            Design & Development
+                        </h4>
+
+                        <p>
+                            Designing and developing the analytical
+                            decision-support artefact.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="method-step">
+
+                        <div class="method-number">04</div>
+
+                        <h4>
+                            Demonstration
+                        </h4>
+
+                        <p>
+                            Demonstrating how the artefact could be used to
+                            explore operational information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="method-step">
+
+                        <div class="method-number">05</div>
+
+                        <h4>
+                            Evaluation
+                        </h4>
+
+                        <p>
+                            Evaluating analytical and artefact-related
+                            outcomes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="method-step">
+
+                        <div class="method-number">06</div>
+
+                        <h4>
+                            Communication
+                        </h4>
+
+                        <p>
+                            Communicating the research problem, process,
+                            findings and implications.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MACHINE LEARNING -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Predictive Modelling
+                    </div>
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        The study compared multiple machine-learning
+                        approaches for the classification task investigated
+                        in the research.
+
+                    </p>
+
+                    <div class="mt-3">
+
+                        <span class="method-tag">
+                            Logistic Regression
+                        </span>
+
+                        <span class="method-tag">
+                            Decision Tree
+                        </span>
+
+                        <span class="method-tag">
+                            Random Forest
+                        </span>
+
+                        <span class="method-tag">
+                            Gradient Boosting
+                        </span>
+
+                        <span class="method-tag">
+                            SVM
+                        </span>
+
+                        <span class="method-tag">
+                            KNN
+                        </span>
+
+                        <span class="method-tag">
+                            XGBoost
+                        </span>
+
+                        <span class="method-tag">
+                            LightGBM
+                        </span>
+
+                    </div>
+
+                    <p class="mt-4">
+
+                        Model evaluation considered metrics including
+                        accuracy, precision, recall, and F1-score, while the
+                        analysis also considered the implications of class
+                        imbalance.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPLAINABILITY -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Explainability
+                    </div>
+
+                    <h3>
+                        Looking Beyond Prediction
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        Predictive performance alone does not explain why a
+                        model produces a particular result. The research
+                        therefore incorporated feature-importance analysis
+                        and SHAP-based interpretation to investigate factors
+                        influencing model predictions.
+
+                    </p>
+
+                    <div class="result-box mt-4">
+
+                        <h4>
+                            Prediction â Explanation â Decision
+                        </h4>
+
+                        <p>
+
+                            This perspective has contributed to my growing
+                            interest in explainable and human-centred
+                            intelligent decision systems.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ARTEFACT -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Research Artefact
+                    </div>
+
+                    <h3>
+                        Interactive Decision Support
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        The research developed a Power BI-based proof-of-
+                        concept dashboard designed to consolidate analytical
+                        information into an interactive monitoring
+                        environment.
+
+                    </p>
+
+                    <div class="row g-3 mt-3">
+
+                        <div class="col-sm-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Operational Overview
+                                </h4>
+
+                                <p>
+                                    Consolidated analytical indicators for
+                                    exploring port activity.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Geographic Analysis
+                                </h4>
+
+                                <p>
+                                    Exploration of geographical patterns
+                                    within the data.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Commodity Analysis
+                                </h4>
+
+                                <p>
+                                    Examination of commodity and trade
+                                    patterns.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Risk Analysis
+                                </h4>
+
+                                <p>
+                                    Analytical exploration of risk-related
+                                    information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTRIBUTION -->
+
+            <div class="row mb-5">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Contribution
+                    </div>
+
+                    <h3>
+                        What the Research Contributed
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Applied Contribution
+                                </h4>
+
+                                <p>
+                                    Demonstrated an approach for integrating
+                                    data analytics and machine learning within
+                                    a Ghanaian port operations context.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Artefact Contribution
+                                </h4>
+
+                                <p>
+                                    Developed a proof-of-concept interactive
+                                    decision-support dashboard.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Analytical Contribution
+                                </h4>
+
+                                <p>
+                                    Compared predictive approaches while
+                                    considering evaluation and class
+                                    imbalance.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="result-box">
+
+                                <h4>
+                                    Future Foundation
+                                </h4>
+
+                                <p>
+                                    Established directions for further work
+                                    involving explainability, richer data,
+                                    and human-centred decision support.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LIMITATIONS -->
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Research Reflection
+                    </div>
+
+                    <h3>
+                        Limitations & Learning
+                    </h3>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        The research was developed as a proof-of-concept and
+                        was constrained by the available dataset and scope of
+                        the study. The work also highlighted challenges
+                        involving class imbalance, data availability,
+                        additional data integration, and the need to evaluate
+                        predictive systems within realistic decision-making
+                        conditions.
+
+                    </p>
+
+                    <p class="serif fs-4 mt-4">
+
+                        A predictive system should be evaluated not only by
+                        how accurately it predicts, but also by how, when, and
+                        why its predictions can responsibly support decisions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     UNDERGRADUATE RESEARCH
+========================= -->
+
+<section id="undergraduate">
+
+    <div class="container">
+
+        <div class="section-label">
+            04 / Earlier Research
+        </div>
+
+        <div class="undergrad">
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <div class="section-label">
+                        Undergraduate Thesis
+                    </div>
+
+                    <h2 class="section-title">
+                        Predicting Product Demand Using Machine Learning
+                    </h2>
+
+                    <p class="education-meta">
+                        BSc Information Technology
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-8">
+
+                    <p>
+
+                        My undergraduate research investigated the application
+                        of statistical forecasting and machine-learning
+                        approaches to product demand prediction, with the
+                        broader objective of supporting production planning
+                        under demand uncertainty.
+
+                    </p>
+
+                    <p>
+
+                        The study provided an early foundation in predictive
+                        analytics and introduced me to the challenge of
+                        comparing different modelling approaches for a
+                        practical forecasting problem.
+
+                    </p>
+
+
+                    <h4 class="mt-4">
+                        Methods explored
+                    </h4>
+
+                    <div class="mt-3">
+
+                        <span class="method-tag">
+                            AR
+                        </span>
+
+                        <span class="method-tag">
+                            ARIMA
+                        </span>
+
+                        <span class="method-tag">
+                            SARIMAX
+                        </span>
+
+                        <span class="method-tag">
+                            Exponential Smoothing
+                        </span>
+
+                        <span class="method-tag">
+                            XGBoost
+                        </span>
+
+                        <span class="method-tag">
+                            Random Forest
+                        </span>
+
+                    </div>
+
+
+                    <h4 class="mt-5">
+                        From models to application
+                    </h4>
+
+                    <p>
+
+                        The project also extended beyond model experimentation
+                        into the development of a web-based prediction
+                        application, connecting analytical outputs with a
+                        practical user-facing system.
+
+                    </p>
+
+
+                    <div class="result-box mt-4">
+
+                        <h4>
+                            Research significance
+                        </h4>
+
+                        <p>
+
+                            This research established my early interest in
+                            predictive analytics, forecasting, and translating
+                            analytical models into practical decision-support
+                            applications.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH CAPABILITIES
+========================= -->
+
+<section id="capabilities" class="bg-light">
+
+    <div class="container">
+
+        <div class="section-label">
+            05 / Research Capabilities
+        </div>
+
+        <h2 class="section-title">
+            Research methods &<br>
+            technical capabilities
+        </h2>
+
+        <p class="section-intro">
+
+            My technical capabilities support the broader research process:
+            from data preparation and quantitative analysis to predictive
+            modelling, interpretation, visualisation, and decision-support
+            artefact development.
+
+        </p>
+
+
+        <div class="row mt-5">
+
+            <div class="col-lg-6">
+
+                <div class="capability-group">
+
+                    <h3>
+                        <i class="bi bi-search me-2"></i>
+                        Research & Quantitative Analysis
+                    </h3>
+
+                    <p>
+
+                        Research problem formulation, data preparation,
+                        exploratory analysis, statistical analysis, feature
+                        engineering, and model evaluation.
+
+                    </p>
+
+                </div>
+
+
+                <div class="capability-group">
+
+                    <h3>
+                        <i class="bi bi-cpu me-2"></i>
+                        Machine Learning
+                    </h3>
+
+                    <p>
+
+                        Classification, predictive modelling, ensemble
+                        methods, feature importance, comparative model
+                        evaluation, and explainability.
+
+                    </p>
+
+                </div>
+
+
+                <div class="capability-group">
+
+                    <h3>
+                        <i class="bi bi-clock-history me-2"></i>
+                        Forecasting & Time Series
+                    </h3>
+
+                    <p>
+
+                        Time-series analysis, ARIMA, SARIMAX, exponential
+                        smoothing, and machine-learning approaches to
+                        forecasting.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="capability-group">
+
+                    <h3>
+                        <i class="bi bi-bar-chart-line me-2"></i>
+                        Visual Analytics
+                    </h3>
+
+                    <p>
+
+                        Interactive analytical visualisation, dashboard
+                        development, data storytelling, and exploration of
+                        complex datasets.
+
+                    </p>
+
+                </div>
+
+
+                <div class="capability-group">
+
+                    <h3>
+                        <i class="bi bi-diagram-3 me-2"></i>
+                        Decision-Support Artefacts
+                    </h3>
+
+                    <p>
+
+                        Integration of data, analytical models and interactive
+                        interfaces into research artefacts designed to support
+                        decision-making.
+
+                    </p>
+
+                </div>
+
+
+                <div class="capability-group">
+
+                    <h3>
+                        <i class="bi bi-code-slash me-2"></i>
+                        Technical Environment
+                    </h3>
+
+                    <div class="mt-3">
+
+                        <span class="tech">Python</span>
+                        <span class="tech">SQL</span>
+                        <span class="tech">Pandas</span>
+                        <span class="tech">NumPy</span>
+                        <span class="tech">Scikit-learn</span>
+                        <span class="tech">XGBoost</span>
+                        <span class="tech">LightGBM</span>
+                        <span class="tech">Statsmodels</span>
+                        <span class="tech">Power BI</span>
+                        <span class="tech">Tableau</span>
+                        <span class="tech">Plotly</span>
+                        <span class="tech">Streamlit</span>
+                        <span class="tech">Jupyter</span>
+                        <span class="tech">GitHub</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH AGENDA
+========================= -->
+
+<section id="agenda">
+
+    <div class="container">
+
+        <div class="section-label">
+            06 / Emerging Research Agenda
+        </div>
+
+        <h2 class="section-title">
+            From previous research<br>
+            toward doctoral questions.
+        </h2>
+
+        <p class="section-intro">
+
+            My emerging research agenda builds on the questions and
+            methodological experiences developed through my undergraduate
+            and master's research.
+
+        </p>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6">
+
+                <div class="agenda-card">
+
+                    <div class="agenda-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Explainable Machine Learning
+                    </h3>
+
+                    <p>
+
+                        Investigating how machine-learning predictions can be
+                        made more interpretable and useful to decision-makers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="agenda-card">
+
+                    <div class="agenda-number">
+                        02
+                    </div>
+
+                    <h3>
+                        HumanâAI Decision Support
+                    </h3>
+
+                    <p>
+
+                        Exploring how intelligent systems can complement human
+                        judgement rather than simply automate decisions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="agenda-card">
+
+                    <div class="agenda-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Adaptive Predictive Systems
+                    </h3>
+
+                    <p>
+
+                        Investigating how predictive systems can respond to
+                        changing data, conditions, and operational patterns.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="agenda-card">
+
+                    <div class="agenda-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Robust & Responsible Machine Learning
+                    </h3>
+
+                    <p>
+
+                        Exploring reliability, class imbalance, uncertainty,
+                        changing data, and responsible use of predictive
+                        systems.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="agenda-card">
+
+                    <div class="agenda-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Intelligent Systems for Complex Operations
+                    </h3>
+
+                    <p>
+
+                        Applying intelligent decision-support concepts to
+                        environments where decisions involve multiple data
+                        sources, uncertainty, and human judgement.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="agenda-card">
+
+                    <div class="agenda-number">
+                        06
+                    </div>
+
+                    <h3>
+                        Data-Driven Decision Intelligence
+                    </h3>
+
+                    <p>
+
+                        Exploring the connection between predictive analytics,
+                        explanation, visual analytics, and actionable
+                        decision-making.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="phd-question">
+
+            <div class="section-label">
+                Emerging Doctoral Question
+            </div>
+
+            <h3>
+
+                âHow can intelligent decision-support systems integrate
+                predictive analytics, explainable machine learning, and human
+                judgement to support reliable decision-making in complex
+                operational environments?â
+
+            </h3>
+
+            <p class="mt-4 mb-0 text-light opacity-75">
+
+                This represents an emerging research direction informed by
+                my previous research rather than a completed research finding.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ACADEMIC BACKGROUND
+========================= -->
+
+<section id="background" class="bg-light">
+
+    <div class="container">
+
+        <div class="section-label">
+            07 / Academic Background
+        </div>
+
+        <h2 class="section-title">
+            Academic foundation
+        </h2>
+
+
+        <div class="row">
+
+            <div class="col-lg-9">
+
+                <div class="education-card">
+
+                    <div class="education-meta">
+                        Master's Degree
+                    </div>
+
+                    <h3 class="mt-2">
+                        [Insert Exact Master's Programme]
+                    </h3>
+
+                    <p class="mb-2">
+                        [Insert Institution]
+                    </p>
+
+                    <p class="text-muted">
+
+                        Master's research:
+                        <em>
+                            Development and Analysis of a Real-Time Port
+                            Activity Monitoring Dashboard in Ghana
+                        </em>
+
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <div class="education-meta">
+                        Bachelor's Degree
+                    </div>
+
+                    <h3 class="mt-2">
+                        BSc Information Technology
+                    </h3>
+
+                    <p class="mb-2">
+                        University of Energy and Natural Resources
+                    </p>
+
+                    <p class="text-muted">
+
+                        Undergraduate research:
+                        <em>
+                            Predicting Product Demand Using Machine Learning
+                        </em>
+
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <div class="education-meta">
+                        Relevant Research & Professional Development
+                    </div>
+
+                    <h3 class="mt-2">
+                        Data Analytics & Cybersecurity
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Relevant professional training and certifications
+                        supporting my analytical and technical development.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH DOCUMENTS
+========================= -->
+
+<section id="documents">
+
+    <div class="container">
+
+        <div class="section-label">
+            08 / Research Documents
+        </div>
+
+        <h2 class="section-title">
+            Research evidence
+        </h2>
+
+        <p class="section-intro">
+
+            This section is intentionally evidence-based. Completed research
+            is presented separately from emerging research interests and
+            proposed future work.
+
+        </p>
+
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="bi bi-file-earmark-person"></i>
+                    </div>
+
+                    <h3>
+                        Research CV
+                    </h3>
+
+                    <p>
+
+                        Academic CV covering research experience, education,
+                        capabilities and research interests.
+
+                    </p>
+
+                    <a href="assets/Eric_Kumi_Research_CV.pdf"
+                       class="btn btn-outline-academic btn-sm mt-2"
+                       target="_blank">
+
+                        View CV
+                        <i class="bi bi-arrow-up-right ms-1"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                    </div>
+
+                    <h3>
+                        Master's Thesis
+                    </h3>
+
+                    <p>
+
+                        Full master's research documenting the problem,
+                        methodology, analysis, artefact, findings and
+                        recommendations.
+
+                    </p>
+
+                    <a href="assets/masters-thesis.pdf"
+                       class="btn btn-outline-academic btn-sm mt-2"
+                       target="_blank">
+
+                        View Thesis
+                        <i class="bi bi-arrow-up-right ms-1"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="bi bi-file-earmark-word"></i>
+                    </div>
+
+                    <h3>
+                        Undergraduate Thesis
+                    </h3>
+
+                    <p>
+
+                        Undergraduate research investigating forecasting and
+                        machine-learning approaches to product demand
+                        prediction.
+
+                    </p>
+
+                    <a href="assets/undergraduate-thesis.pdf"
+                       class="btn btn-outline-academic btn-sm mt-2"
+                       target="_blank">
+
+                        View Thesis
+                        <i class="bi bi-arrow-up-right ms-1"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+
+                <div class="section-label">
+                    09 / Academic Contact
+                </div>
+
+                <h2 class="display-5">
+
+                    Research, doctoral study & collaboration
+
+                </h2>
+
+                <p class="mt-4">
+
+                    I am interested in doctoral research opportunities,
+                    research collaborations, and conversations around
+                    machine learning, predictive analytics, intelligent
+                    decision systems, and data-driven decision support.
+
+                </p>
+
+
+                <div class="mt-4">
+
+                    <a href="mailto:YOUR_EMAIL@example.com"
+                       class="contact-link">
+
+                        <i class="bi bi-envelope"></i>
+                        Email
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                       class="contact-link"
+                       target="_blank">
+
+                        <i class="bi bi-linkedin"></i>
+                        LinkedIn
+
+                    </a>
+
+                    <a href="https://github.com/spacely7"
+                       class="contact-link"
+                       target="_blank">
+
+                        <i class="bi bi-github"></i>
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="d-flex flex-column flex-md-row
+                    justify-content-between gap-2">
+
+            <div>
+                Â© 2026 Eric Kumi
+            </div>
+
+            <div>
+                Data Researcher Â· Machine Learning Â· Intelligent Decision Systems
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
